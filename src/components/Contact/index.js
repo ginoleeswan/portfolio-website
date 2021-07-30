@@ -9,7 +9,7 @@ import {
   FormLabel,
   FormWrap,
   Icon,
-  Text,
+  // Text,
 } from "./ContactElements";
 
 const Contact = () => {
