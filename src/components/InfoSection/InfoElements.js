@@ -5,20 +5,24 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 120px 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 680px;
+  height: 741px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 581px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -30,7 +34,7 @@ export const InfoRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col 1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      imgStart ? `'col1 col1' 'col2 col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -97,4 +101,8 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width: 768px) {
+    height: 280px;
+  }
 `;
